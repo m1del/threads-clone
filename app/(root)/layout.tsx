@@ -15,9 +15,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Threads",
   description: "A Next.js 13 Meta Threads application",
-  icons: {
-    icon: '../favicon.ico'
-  },
 };
 
 export default function RootLayout({
@@ -27,15 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider
-      appearance={{
-        baseTheme: dark,
-      }}
+
     >
       <html lang='en'>
         <body className={inter.className}>
           <Topbar />
 
-          <main className='flex flex-row'>
+          <main>
             <LeftSidebar />
 
             <section className='main-container'>
